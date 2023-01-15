@@ -1,4 +1,4 @@
-# *in silico* spectral-generator
+# *In silico* spectral-generator
 
 ## Description
 
