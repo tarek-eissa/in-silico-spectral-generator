@@ -36,14 +36,14 @@ def generate_spectra(B_neg, B_pos, mu_neg, mu_pos, n_neg, n_pos, beta_std_neg='a
     y_gen : 1-D Vector
         Labels of generated spectra.
     """    
-    # Set random state for the numpy random number generator
+    # set random state for the numpy random number generator
     rand = np.random.RandomState(random_state)
 
-    # number of components modeling variability
+    # number of calibration vectors modeling variability
     m_neg = B_neg.shape[0]
     m_pos = B_pos.shape[0]
     
-    # Calibrate beta coef, if 'auto', to model the variability in the given samples
+    # to model the biological variability, if 'auto', set to the calibrated level based on the given vectors
     if beta_std_neg == 'auto':
         beta_std_neg = 1/np.sqrt(m_neg)
     if beta_std_pos == 'auto':
@@ -52,17 +52,17 @@ def generate_spectra(B_neg, B_pos, mu_neg, mu_pos, n_neg, n_pos, beta_std_neg='a
     BETA_neg = rand.normal(0, beta_std_neg, (B_neg.shape[0], n_neg)).T
     BETA_pos = rand.normal(0, beta_std_pos, (B_pos.shape[0], n_pos)).T
     
-    # Simulated class samples with modeled variability
+    # generated class samples with modeled variability
     X_neg_gen = np.tile(mu_neg, (n_neg, 1)) + BETA_neg @ B_neg
     X_pos_gen = np.tile(mu_pos, (n_pos, 1)) + BETA_pos @ B_pos
     
-    # Put simulated samples in one matrix
+    # put simulated samples in one matrix
     X_gen = np.vstack([X_neg_gen, X_pos_gen])
 
-    # Add measurement noise
+    # add measurement white noise
     X_gen += rand.normal(0, epsilon_std, X_gen.shape)
     
-    # Create class labels for simulated samples
+    # create class labels for simulated samples
     y_gen = np.hstack([np.zeros(n_neg), np.ones(n_pos)])
     
     return X_gen, y_gen
