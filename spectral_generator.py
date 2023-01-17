@@ -49,8 +49,8 @@ def generate_spectra(B_neg, B_pos, mu_neg, mu_pos, n_neg, n_pos, beta_std_neg='a
     if beta_std_pos == 'auto':
         beta_std_pos = 1/np.sqrt(m_pos)
 
-    BETA_neg = rand.normal(0, beta_std_neg, (B_neg.shape[0], n_neg)).T
-    BETA_pos = rand.normal(0, beta_std_pos, (B_pos.shape[0], n_pos)).T
+    BETA_neg = rand.normal(0, beta_std_neg, (m_neg, n_neg)).T
+    BETA_pos = rand.normal(0, beta_std_pos, (m_pos, n_pos)).T
     
     # generated class samples with modeled variability
     X_neg_gen = np.tile(mu_neg, (n_neg, 1)) + BETA_neg @ B_neg
