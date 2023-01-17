@@ -17,12 +17,12 @@ def generate_spectra(B_neg, B_pos, mu_neg, mu_pos, n_neg, n_pos, beta_std_neg='a
         Number of positive class samples to be generated.
     n_neg : Int
         Number of negative class samples to be generated.
-    beta_neg_std : Float
+    beta_std_neg : Float
         Standard deviation around the biological variability of the negative class samples. 
         The higher, the more variance with zero being no variance.
         Defaults to 1/sqrt(X_neg.shape[0]), i.e., using the number of negative class samples used for calibration.
-    beta_pos_std : Float
-        Same as beta_neg_std but for the postive class.
+    beta_std_pos : Float
+        Same as beta_std_neg but for the postive class.
     epsilon_std : 1-D Array
         Standard deviation around the additative white noise across the spectrum. 
         The higher, the more variance with zero being no variance.
