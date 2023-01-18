@@ -1,7 +1,6 @@
 # _In silico_ Spectral Generator
 
 ## Description
-
 This repository contains a toolbox for the _in silico_ model described in the paper entitled "**Limits and prospects of molecular fingerprinting for
 phenotyping biological systems revealed through in silico modeling**".
 
