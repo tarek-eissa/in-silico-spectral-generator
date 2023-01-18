@@ -15,7 +15,7 @@ In addition to the _generate_spectra_ function, four Jupyter Notebooks (.ipynb) 
 
 ## Datasets
 The "data" folder contains the spectral datasets as CSV files.
-* "dataset_1" contains generated spectra based on the experimentally-recorded serum-based FTIR spectra for lung cancer cases, prostate cancer cases, and control individuals. The dataset was split into 20 parts, each in a CSV files, to work around the 100 MB GitHub file limit.
+* "dataset_1" contains generated spectra based on the experimentally-recorded serum-based FTIR spectra for lung cancer cases, prostate cancer cases, and control individuals. The dataset was split into 20 parts, each in a CSV file, to work around the 100 MB GitHub file limit.
 * "dataset_2" contains spectra recorded from water samples using the same FTIR spectrometer which measured the serum spectra.
 
 For more details on how the data was collected and generated, please refer to the paper and the supporting information provided in it.
