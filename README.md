@@ -2,7 +2,7 @@
 
 ## Description
 This repository contains a toolbox for the _in silico_ model described in the paper entitled "**Limits and prospects of molecular fingerprinting for
-phenotyping biological systems revealed through in silico modeling**".
+phenotyping biological systems revealed through in silico modeling**" (https://doi.org/10.1021/acs.analchem.2c04711).
 
 The scripts, along with the provided datasets, allow for convenient applications of the described model to reproduce and extend the results presented in the paper.
 
