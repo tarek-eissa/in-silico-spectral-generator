@@ -2,7 +2,7 @@
 
 ## Description
 This repository contains a toolbox for the _in silico_ model described in the paper entitled "**Limits and prospects of molecular fingerprinting for
-phenotyping biological systems revealed through in silico modeling**" (https://doi.org/10.1021/acs.analchem.2c04711).
+phenotyping biological systems revealed through _in silico_ modeling**" (https://doi.org/10.1021/acs.analchem.2c04711).
 
 The scripts, along with the provided datasets, allow for convenient applications of the described model to reproduce and extend the results presented in the paper.
 
@@ -24,6 +24,3 @@ For more details on how the data was collected and generated, please refer to th
 * pandas (version 1.2.4 used in paper)
 * sklearn (version 0.24.1 used in paper)
 * matplotlib (version 3.5.1 used in paper)
-
-## Citation
-> to be added.
