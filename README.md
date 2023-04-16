@@ -27,4 +27,4 @@ For more details on how the data was collected and generated, please refer to th
 
 
 ## Citation
-> To be added.
+> Eissa T, Kepesidis KV, Zigman M, Huber M. Limits and Prospects of Molecular Fingerprinting for Phenotyping Biological Systems Revealed through In Silico Modeling. Anal Chem. 2023 Apr 12. doi: 10.1021/acs.analchem.2c04711. Epub ahead of print. PMID: 37043294.
